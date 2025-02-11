@@ -6,7 +6,8 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const AuthRouter = require("./Routes/AuthRouter");
 const ProductRouter = require("./Routes/ProductRouter");
-
+const ensureAuthenticated = require("./Middlewares/Auth");
+const ExpenseRouter = require('./Routes/ExpenseRouter');
 
 const PORT = process.env.PORT || 8000;
 
@@ -15,6 +16,8 @@ app.use(cors());
 
 app.use('/auth',AuthRouter);
 app.use('/products',ProductRouter);
+app.use('/expenses',ensureAuthenticated,ExpenseRouter);
+
 
 app.get("/ping",(req,res)=>{
       res.send("I am in ping"); 
