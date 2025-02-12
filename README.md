@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# login-signup-mern
-=======
-# expense-tracker-mern
->>>>>>> 47275b9a8d0bec93a7db6d713739111e7a27f2a2
+<h2>Expense tracking application for tracking your all expenses with crud functionalities. Dynamic in nature, changes reflect immediately when any transaction is made</h2>
+<br>
+<h2>Built with mern technologies keeping up to date industry standards</h2>
